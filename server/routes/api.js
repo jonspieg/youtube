@@ -14,13 +14,18 @@ router.get('/', (req, res) => {
 router.get('/posts', (req, res) => {
   // Get posts from the mock api
   // This should ideally be replaced with a service that connects to MongoDB
-  axios.get(`${API}/posts`)
-    .then(posts => {
-      res.status(200).json(posts.data);
-    })
-    .catch(error => {
-      res.status(500).send(error)
-    });
+  let articles = [
+    {"title":"Cycloid", "body":"All you wanted to know about cycloids"}, 
+    {"title":"The Coriolis Effect", "body":"All you wanted to know about the coriolis effect"}
+  ];
+  res.status(200).json(articles);
+  // axios.get(`${API}/posts`)
+  //   .then(posts => {
+  //     res.status(200).json(posts.data);
+  //   })
+  //   .catch(error => {
+  //     res.status(500).send(error)
+  //   });
 });
 
 module.exports = router;

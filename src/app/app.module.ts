@@ -8,6 +8,7 @@ import { provideRoutes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostsService } from './posts.service';
+import { HeaderComponent } from './header/header.component';
 
 // Define the routes
 const ROUTES = [
@@ -25,7 +26,8 @@ const ROUTES = [
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
