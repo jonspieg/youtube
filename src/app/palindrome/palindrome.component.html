@@ -1,7 +1,15 @@
 <div align="center" style="margin-top:5%">
+  <div *ngIf="!isValidPalindrome" align="center">
+    <p>BOOO "{{candidate}}" is not a palindrome</p>
+    <p></p>
+    <p>Here's a palindrome:</p>
+  </div>
   <div class="text_plane" align="center">
-    <div class="letter_plane" *ngFor="let letter of palindromeLetters">
-      {{letter}}
+    <div *ngFor="let letter of palindromeLetters">
+      <!--<div class="hinge"></div>-->
+      <div class=letter_plane>
+        <span style="vertical-align: top; text-align: center; line-height:50px">{{letter}}</span>
+      </div>
     </div>
   </div>
 </div>
