@@ -9,17 +9,17 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostsService } from './posts.service';
 import { HeaderComponent } from './header/header.component';
+import { PalindromeComponent } from './palindrome/palindrome.component';
 
 // Define the routes
 const ROUTES = [
   {
-    path: '',
-    redirectTo: 'posts',
-    pathMatch: 'full'
-  },
-  {
     path: 'posts',
     component: PostsComponent
+  },
+  {
+    path: 'palindrome',
+    component: PalindromeComponent
   }
 ];
 
@@ -27,7 +27,8 @@ const ROUTES = [
   declarations: [
     AppComponent,
     PostsComponent,
-    HeaderComponent
+    HeaderComponent,
+    PalindromeComponent
   ],
   imports: [
     BrowserModule,
