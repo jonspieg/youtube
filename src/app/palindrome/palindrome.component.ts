@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PalindromeComponent implements OnInit {
 
-  private candidate: string = "";
-  private palindromeLetters: string[] = "DAMMITIMMAD".split('');
-  private isValidPalindrome: boolean = false;
+  public candidate: string = "";
+  public palindromeLetters: string[] = "DAMMITIMMAD".split('');
+  public isValidPalindrome: boolean = false;
 
   constructor(private activatedRoute: ActivatedRoute) { }
 
