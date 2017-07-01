@@ -1,7 +1,7 @@
 .text_plane
 {
     width: max-content;
-    height: 64px;
+    height: 54px;
     transform-style: preserve-3d;
     animation: rotate_text 10s linear infinite;
     text-align: center;
@@ -16,14 +16,20 @@
 .letter_plane
 {
     margin: 5px;
-    /*margin-top: 5px;*/
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     animation: rotate_letters 10s linear infinite;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     border: 2px solid black;
+}
+
+.letter
+{
+    vertical-align: top; 
+    text-align: center; 
+    line-height:36px;
 }
 
 .hinge

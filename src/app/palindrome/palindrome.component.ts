@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PalindromeComponent implements OnInit {
 
   public candidate: string = "";
-  public palindromeLetters: string[] = "DAMMITIMMAD".split('');
+  public palindromeLetters: string[] = "RACECAR".split('');
   public isValidPalindrome: boolean = false;
 
   constructor(private activatedRoute: ActivatedRoute) { }
@@ -27,12 +27,16 @@ export class PalindromeComponent implements OnInit {
             this.palindromeLetters = palindromeLetters;
           }
         }
+        else
+        {
+          this.isValidPalindrome = true;
+        }
       });
   }
 
   isPalindrome(candidate: string[]): boolean
   {
-    for(let i=0;i<Math.floor(0.5*candidate.length)-1;i++)
+    for(let i=0;i<=Math.floor(0.5*candidate.length)-1;i++)
       if(candidate[i] != candidate[candidate.length-i-1])
         return false;
     return true;
