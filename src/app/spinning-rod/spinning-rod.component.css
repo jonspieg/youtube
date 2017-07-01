@@ -5,6 +5,7 @@
     border: 2px dashed black;
     transform-style: preserve-3d;
 }
+
 .axle
 {
     height: 200px;
@@ -14,13 +15,83 @@
 }
 .rod
 {
-    height: 200px;
-    width:1px; 
-    position: relative;
     left: 1cm;
-    background:black;
-    transform: rotateX(30deg);
+    height: 200px;
+    position: relative; 
+    transform: rotateX(45deg);
     transform-style: preserve-3d;
+}
+.rod1
+{
+    position: absolute;
+    top:0;
+    height: 200px;
+    width:6px; 
+    background:black;
+    transform: rotateY(45deg);
+}
+.rod2
+{
+    position: absolute;
+    top:0;
+    height: 200px;
+    width:6px; 
+    background:black;
+    transform: rotateY(90deg);
+}
+.rod3
+{
+    position: absolute;
+    top:0;
+    height: 200px;
+    width:6px; 
+    background:black;
+    transform: rotateY(135deg);
+}
+.rod4
+{
+    position: absolute;
+    top:0;
+    height: 200px;
+    width:6px; 
+    background:black;
+    transform: rotateY(180deg);
+}
+.rod5
+{
+    position: absolute;
+    top:0;
+    height: 200px;
+    width:6px; 
+    background:black;
+    transform: rotateY(225deg);
+}
+.rod6
+{
+    position: absolute;
+    top:0;
+    height: 200px;
+    width:6px; 
+    background:black;
+    transform: rotateY(270deg);
+}
+.rod7
+{
+    position: absolute;
+    top:0;
+    height: 200px;
+    width:6px; 
+    background:black;
+    transform: rotateY(315deg);
+}
+.rod8
+{
+    position: absolute;
+    top:0;
+    height: 200px;
+    width:6px; 
+    background:black;
+    transform: rotateY(360deg);
 }
 @keyframes rotate
 {
