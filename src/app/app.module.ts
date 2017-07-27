@@ -11,6 +11,7 @@ import { PostsService } from './posts.service';
 import { HeaderComponent } from './header/header.component';
 import { PalindromeComponent } from './palindrome/palindrome.component';
 import { SpinningRodComponent } from './spinning-rod/spinning-rod.component';
+import { WavePendulumComponent } from './wave-pendulum/wave-pendulum.component';
 
 // Define the routes
 const ROUTES = [
@@ -25,6 +26,10 @@ const ROUTES = [
   {
     path: 'palindrome',
     component: PalindromeComponent
+  },
+  {
+    path: 'wave',
+    component: WavePendulumComponent
   }
 ];
 
@@ -34,7 +39,8 @@ const ROUTES = [
     PostsComponent,
     HeaderComponent,
     PalindromeComponent,
-    SpinningRodComponent
+    SpinningRodComponent,
+    WavePendulumComponent
   ],
   imports: [
     BrowserModule,
