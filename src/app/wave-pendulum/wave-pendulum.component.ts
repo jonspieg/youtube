@@ -33,7 +33,7 @@ export class WavePendulumComponent implements OnInit {
       // context.strokeStyle = '#003300';
       // context.stroke();
 
-      global.setInterval(()=>{this.drawCanvas()}, 1000/this.frameRate);
+      setInterval(()=>{this.drawCanvas()}, 1000/this.frameRate);
   }
 
   drawCanvas()
